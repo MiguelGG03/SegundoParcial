@@ -2,7 +2,7 @@ import random
 import math
 import sys
 import shutil
-from print_paraview import*
+from print_paraview import *
 
 '''
 PARAMETERS
@@ -111,7 +111,7 @@ for i in range(0,len(mesh),1):
 fini.close()
 fmech.close()
 
-print_paraview (vec_nodes_0, mesh)
+print_paraview(vec_nodes_0, mesh)
 
 
 print('end of the function')
