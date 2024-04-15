@@ -3,7 +3,7 @@ import pandas as pd
 
 # Crear un arreglo tridimensional de tamaño 5x5x5
 # Cada celda contiene el valor de su suma de índices, por ejemplo, (i+j+k)
-dimension = 5
+dimension = 10
 array_3d = np.zeros((dimension, dimension, dimension))
 
 # Llenar el arreglo con la suma de sus índices
