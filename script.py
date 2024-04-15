@@ -1,9 +1,17 @@
 import numpy as np
 import pandas as pd
 
-domain = np.zeros((10, 10, 10))  # Crea un dominio 3D de 10x10x10
-print(domain)
+# Crear un arreglo tridimensional de tamaño 5x5x5
+# Cada celda contiene el valor de su suma de índices, por ejemplo, (i+j+k)
+dimension = 5
+array_3d = np.zeros((dimension, dimension, dimension))
 
+# Llenar el arreglo con la suma de sus índices
+for i in range(dimension):
+    for j in range(dimension):
+        for k in range(dimension):
+            array_3d[i, j, k] = i + j + k
 
-df = pd.DataFrame({'x': [0, 1], 'y': [0, 1], 'z': [0, 1], 'pressure': [100, 150]})
-df.to_csv('output.csv', index=False)
+# Imprimir el arreglo
+print("Arreglo tridimensional:")
+print(array_3d)
